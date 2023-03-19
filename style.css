@@ -8,7 +8,7 @@
 /* Estilos gerais */
 body {
   font-family: Arial, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5;
   color: #333;
 }
@@ -118,4 +118,14 @@ footer{
   color: #fff;
   text-align: right;
   padding: 10px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#conteudo {
+  height: 100vh;
+  width: 100vw;
 }
