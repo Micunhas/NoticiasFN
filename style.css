@@ -1,134 +1,99 @@
-/* Reset de estilos */
+/* Reset CSS */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-/* Estilos gerais */
+/* Estilo geral */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f5f5f5;
 }
 
-/* Estilos do cabeçalho */
+/* Estilo do cabeçalho */
 header {
-  background-color: #222;
-  color: #fff;
-  padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  transition: all 0.2s ease;
-}
-
-nav a:hover {
-  background-color: #fff;
-  color: #222;
-}
-
-/* Estilos do conteúdo principal */
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 40px;
-}
-
-article {
-  flex: 2;
-  margin-right: 20px;
-}
-
-aside {
-  flex: 1;
-}
-
-h4 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-p {
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-ul {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-ul li a {
-  color: #222;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-ul li a:hover {
-  color: #f00;
-}
-
-/* Estilos do rodapé */
-.not {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
 .logo {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
   padding: 10px;
-  background-color: #0000FF;
+  background-color: #FF0000;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
   margin-right: auto;
 }
-footer{
-  background-color: #222;
-  color: #fff;
-  text-align: right;
-  padding: 10px;
-}
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+
+nav ul {
+	list-style: none;
+	display: flex;
 }
 
-@media screen and (max-width: 480px) {
-  /* Estilos para telas de até 480 pixels de largura */
-  body {
-    font-size: 16px;
-  }
-  /* Adicione mais estilos conforme necessário */
+nav ul li {
+	margin-left: 20px;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+nav ul li a:hover {
+	color: #666;
+}
+
+/* Estilo do artigo */
+article {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 20px;
+}
+
+article header h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.date {
+	font-style: italic;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+blockquote {
+	font-style: italic;
+	margin: 20px 0;
+	padding-left: 20px;
+	border-left: 2px solid #333;
+}
+
+blockquote p {
+	margin-bottom: 10px;
+}
+
+blockquote cite {
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
 }
