@@ -97,3 +97,9 @@ blockquote cite {
 	font-size: 14px;
 	margin-top: 10px;
 }
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
